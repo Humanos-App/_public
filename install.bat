@@ -67,13 +67,6 @@ if %ERRORLEVEL% neq 0 (
     exit /b 1
 )
 
-:: Executa o arquivo run.bat no mesmo diretório do script
-if exist "run.bat" (
-    echo Executando run.bat...
-    call run.bat
-) else (
-    echo O arquivo run.bat não foi encontrado no diretório atual.
-)
 
 :: Abre um novo terminal com permissões de administrador e executa o comando java -jar ./Server-all.jar
 echo Abrindo um novo terminal com permissões de administrador...
